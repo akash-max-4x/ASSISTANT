@@ -46,8 +46,18 @@ function takeCommand(message){
     if(message.includes("hello")||message.includes("hey")){
         speak("hello sir,what can i help you?")
     }
+    else if(message.includes("how are you")){
+        speak("i am fine and you")
+    }
+    else if(message.includes("are you sure")){
+        speak("Yes")
+    }
+    else if(message.includes("Say one song")){
+        speak("Sorry not found")
+    }
     else if(message.includes("who are you")){
-        speak("i am virtual assistant ,created by Ayush Sir")
+        speak("i am virtual assistant ,created by AKASH Sir")    
+            
     }else if(message.includes("open youtube")){
         speak("opening youtube...")
         window.open("https://youtube.com/","_blank")
@@ -67,6 +77,14 @@ function takeCommand(message){
     else if(message.includes("open calculator")){
         speak("opening calculator..")
         window.open("calculator://")
+    }
+    else if(message.includes("open whatsapp")){
+        speak("opening whatsapp..")
+        window.open("whatsapp://")
+    }
+    else if(message.includes("open facebook")){
+        speak("opening facebook..")
+        window.open("https://www.facebook.com/","_blank")
     }
     else if(message.includes("open whatsapp")){
         speak("opening whatsapp..")
